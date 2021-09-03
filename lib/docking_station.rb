@@ -11,6 +11,7 @@ class DockingStation
 
   def release_bike
     fail 'No bikes available' if empty?
+    fail 'No bikes available - broken bike' if @bikes[-1].broken?
     @bikes.pop
   end
 
@@ -19,7 +20,6 @@ class DockingStation
     @bikes << bike
   end
 
-  # https://www.culttt.com/2015/06/03/the-difference-between-public-protected-and-private-methods-in-ruby/
   private
   attr_reader :bikes
   
