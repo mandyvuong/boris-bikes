@@ -53,7 +53,7 @@ I'd like docking stations to accept returning bikes (broken or not).
 ## Installation
 
 ```
-git clone
+git clone https://github.com/mandyvuong/boris-bikes.git
 ```
 
 ## Tests
